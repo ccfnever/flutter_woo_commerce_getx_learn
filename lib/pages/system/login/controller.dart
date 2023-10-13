@@ -3,6 +3,10 @@ import 'package:get/get.dart';
 class LoginController extends GetxController {
   LoginController();
 
+  get emailErrorText => null;
+
+  get passwordErrorText => null;
+
   _initData() {
     update(["login"]);
   }
@@ -24,4 +28,16 @@ class LoginController extends GetxController {
   // void onClose() {
   //   super.onClose();
   // }
+
+  void onEmailChanged(String value) {
+  }
+
+  void onPasswordChanged(String value) {
+  }
+
+  void loginPressed() {
+  }
+
+  void registerPressed() {
+  }
 }
