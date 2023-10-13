@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_woo_commerce_getx_learn/common/routers/names.dart';
 import 'package:flutter_woo_commerce_getx_learn/common/routers/pages.dart';
 import 'package:get/get.dart';
 
@@ -19,9 +20,13 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // // 路由
+      // initialRoute: "/",
+      // getPages: RoutePages.list,
       // 路由
-      initialRoute: "/",
+      initialRoute: RouteNames.systemSplash,
       getPages: RoutePages.list,
+      navigatorObservers: [RoutePages.observer],
     );
   }
 }

@@ -7,12 +7,7 @@ class SplashController extends GetxController {
     update(["splash"]);
   }
 
-  String title = "";
-
-  void onTap(int ticket) {
-    title = "getBuilder -> $ticket";
-    update(['splash_title']);
-  }
+  void onTap() {}
 
   // @override
   // void onInit() {
